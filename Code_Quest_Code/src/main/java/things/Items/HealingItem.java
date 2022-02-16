@@ -3,23 +3,24 @@ package things.Items;
 
 import things.Items.types.HealingItemType;
 
-public class HealingItem {
-    private String name;
-    private HealingItemType type;
+public class HealingItem extends Item{
+    private HealingItemType healingItemType;
     private int healthMod;
 
+    public HealingItem(String name, int healthMod){
+        super(name);
+        this.healingItemType = null;
+        this.healthMod = healthMod;
+    }
+
     public HealingItem(HealingItemType type) {
-        this.type = type;
-        this.name = type.getType();
+        super(type.getType());
+        this.healingItemType = type;
         this. healthMod = type.getHealthMod();
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public HealingItemType getType() {
-        return type;
+    public HealingItemType getHealingItemType() {
+        return healingItemType;
     }
 
     public int getHealthMod() {

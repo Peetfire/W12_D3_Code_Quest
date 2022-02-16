@@ -22,7 +22,7 @@ public class HealingItemTest {
 
     @Test
     public void hasType(){
-        assertEquals(HealingItemType.ALIEN_ARTIFACT, healingItem.getType());
+        assertEquals(HealingItemType.ALIEN_ARTIFACT, healingItem.getHealingItemType());
     }
 
     @Test
