@@ -9,13 +9,15 @@ public enum ProtectorType {
     LEATHER_ARMOUR("Leather Armour", 3),
     CHAINMAIL("Chainmail", 2);
 
-    private static String type;
-    private static int defenceMod;
+    private final String type;
+    private final int defenceMod;
 
     ProtectorType(String type, int defenceMod) {
+        this.type = type;
+        this.defenceMod = defenceMod;
     }
 
-    public static String getType() {return type;}
+    public String getType() {return type;}
 
-    public static int getDefenceMod() {return defenceMod;}
+    public int getDefenceMod() {return defenceMod;}
 }
