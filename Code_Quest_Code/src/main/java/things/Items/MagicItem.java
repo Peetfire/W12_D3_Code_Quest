@@ -1,4 +1,4 @@
 package things.Items;
 
-public class Items {
+public class MagicItem {
 }
